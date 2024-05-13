@@ -40,8 +40,7 @@ header('Content-Type: text/html; charset=' . $CHARSET);
 			?>
 			<div>
 				<h1>Welcome</h1>
-				<p>This data portal has been established to promote collaborative... Replace with introductory text in English.
-				If the portal is not meant to be multilingual, remove the unneeded language sections</p>
+				<p>The International Taphonomy Reference Collection Portal provides specimen-based information on bone modification and other features of modern and fossil bones and bone assemblages.   It is designed to help paleobiologists, anthropologists, archaeologists, ecologists, and forensic scientists share information that will help them interpret various types of taphonomic evidence. </p>
 			</div>
 			<?php
 		}
