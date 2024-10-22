@@ -4,20 +4,21 @@ if($LANG_TAG == 'en' || !file_exists($SERVER_ROOT.'/content/lang/index.'.$LANG_T
 else include_once($SERVER_ROOT.'/content/lang/index.'.$LANG_TAG.'.php');
 header('Content-Type: text/html; charset=' . $CHARSET);
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="<?php echo $LANG_TAG ?>">
 <head>
-	<title><?php echo $DEFAULT_TITLE; ?> Home</title>
-	<?php
-	include_once($SERVER_ROOT . '/includes/head.php');
-	include_once($SERVER_ROOT . '/includes/googleanalytics.php');
-	?>
+        <title><?php echo $DEFAULT_TITLE; ?> Home</title>
+        <?php
+        include_once($SERVER_ROOT . '/includes/head.php');
+        include_once($SERVER_ROOT . '/includes/googleanalytics.php');
+        ?>
 </head>
 <body>
 	<?php
 	include($SERVER_ROOT . '/includes/header.php');
 	?>
 	<div class="navpath"></div>
-	<div id="innertext">
+	<main id="innertext">
 		<?php
 		if($LANG_TAG == 'es'){
 			?>
@@ -45,7 +46,7 @@ header('Content-Type: text/html; charset=' . $CHARSET);
 			<?php
 		}
 		?>
-	</div>
+	</main>
 	<?php
 	include($SERVER_ROOT . '/includes/footer.php');
 	?>

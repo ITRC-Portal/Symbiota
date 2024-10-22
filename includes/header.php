@@ -1,34 +1,38 @@
 <?php
-if($LANG_TAG == 'en' || !file_exists($SERVER_ROOT.'/content/lang/header.'.$LANG_TAG.'.php')) include_once($SERVER_ROOT.'/content/lang/header.en.php');
-else include_once($SERVER_ROOT.'/content/lang/header.'.$LANG_TAG.'.php');
+if($LANG_TAG == 'en' || !file_exists($SERVER_ROOT.'/content/lang/templates/header.' . $LANG_TAG . '.php'))
+        include_once($SERVER_ROOT . '/content/lang/templates/header.en.php');
+else include_once($SERVER_ROOT . '/content/lang/templates/header.' . $LANG_TAG . '.php');
+$SHOULD_USE_HARVESTPARAMS = $SHOULD_USE_HARVESTPARAMS ?? false;
+$collectionSearchPage = $SHOULD_USE_HARVESTPARAMS ? '/collections/index.php' : '/collections/search/index.php';
 ?>
 <div class="header-wrapper">
-	<header>
-		<div class="top-wrapper">
-			<nav class="top-login">
+        <header>
+                <div class="top-wrapper">
+                        <a class="screen-reader-only" href="#end-nav"><?= $LANG['H_SKIP_NAV'] ?></a>
+                        <nav class="top-login" aria-label="horizontal-nav">
 				<?php
 				if ($USER_DISPLAY_NAME) {
 					?>
-					<span style="">
-						<?php echo (isset($LANG['H_WELCOME'])?$LANG['H_WELCOME']:'Welcome').' '.$USER_DISPLAY_NAME; ?>!
+					<div class="welcome-text bottom-breathing-room-rel">
+						<?= $LANG['H_WELCOME'] . ' ' . $USER_DISPLAY_NAME; ?>!
+					</div>
+	                                <span style="white-space: nowrap;" class="button button-tertiary bottom-breathing-room-rel">
+						<a href="<?php echo $CLIENT_ROOT; ?>/profile/viewprofile.php"><?= $LANG['H_MY_PROFILE'] ?></a>
 					</span>
-					<span class="button button-tertiary">
-						<a href="<?php echo $CLIENT_ROOT; ?>/profile/viewprofile.php"><?php echo (isset($LANG['H_MY_PROFILE'])?$LANG['H_MY_PROFILE']:'My Profile')?></a>
-					</span>
-					<span class="button button-secondary">
-						<a href="<?php echo $CLIENT_ROOT; ?>/profile/index.php?submit=logout"><?php echo (isset($LANG['H_LOGOUT'])?$LANG['H_LOGOUT']:'Sign Out')?></a>
+                                        <span style="white-space: nowrap;" class="button button-secondary bottom-breathing-room-rel">
+						<a href="<?php echo $CLIENT_ROOT; ?>/profile/index.php?submit=logout"><?= $LANG['H_LOGOUT'] ?></a>
 					</span>
 					<?php
 				} else {
 					?>
-					<span>
-						<a href="#">
+					<!-- <span class="button button-tertiary">
+						<a onclick="window.location.href='#'">
 							Contact Us
 						</a>
-					</span>
+					</span> -->
 					<span class="button button-secondary">
 						<a href="<?php echo $CLIENT_ROOT . "/profile/index.php?refurl=" . $_SERVER['SCRIPT_NAME'] . "?" . htmlspecialchars($_SERVER['QUERY_STRING'], ENT_QUOTES); ?>">
-							<?php echo (isset($LANG['H_LOGIN'])?$LANG['H_LOGIN']:'Login')?>
+							<?= $LANG['H_LOGIN'] ?>
 						</a>
 					</span>
 					<?php
@@ -41,55 +45,55 @@ else include_once($SERVER_ROOT.'/content/lang/header.'.$LANG_TAG.'.php');
 				</a>
 				<div class="brand-name">
 					<h1>International Taphonomy Reference Collection</h1>
-					<h2>Redesigned by the Symbiota Support Hub</h2>
+					<!-- <h2>Redesigned by the Symbiota Support Hub</h2> -->
 				</div>
 			</div>
 		</div>
-		<div class="menu-wrapper">
-			<!-- Hamburger icon -->
-			<input class="side-menu" type="checkbox" id="side-menu" />
-			<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-			<!-- Menu -->
-			<nav class="top-menu">
+                <div class="menu-wrapper">
+                        <!-- Hamburger icon -->
+                        <input class="side-menu" type="checkbox" id="side-menu" name="side-menu" />
+                        <label class="hamb hamb-line hamb-label" for="side-menu" tabindex="0">☰</label>
+                        <!-- Menu -->
+                        <nav class="top-menu" aria-label="hamburger-nav">
 				<ul class="menu">
 					<li>
 						<a href="<?php echo $CLIENT_ROOT; ?>/index.php">
-							<?php echo (isset($LANG['H_HOME'])?$LANG['H_HOME']:'Home'); ?>
+							<?= $LANG['H_HOME'] ?>
 						</a>
 					</li>
 					<li>
-						<a href="<?php echo $CLIENT_ROOT; ?>/collections/index.php">
-							<?php echo (isset($LANG['H_COLLECTIONS'])?$LANG['H_COLLECTIONS']:'Collections'); ?>
+						<a href="<?php echo $CLIENT_ROOT . $collectionSearchPage ?>">
+							<?= $LANG['H_SEARCH'] ?>
 						</a>
 					</li>
 					<li>
 						<a href="<?php echo $CLIENT_ROOT; ?>/collections/map/index.php" target="_blank" rel="noopener noreferrer">
-							<?php echo (isset($LANG['H_MAP_SEARCH'])?$LANG['H_MAP_SEARCH']:'Map Search'); ?>
+							<?= $LANG['H_MAP_SEARCH'] ?>
 						</a>
 					</li>
 					<li>
 						<a href="<?php echo $CLIENT_ROOT; ?>/checklists/index.php">
-							<?php echo (isset($LANG['H_INVENTORIES'])?$LANG['H_INVENTORIES']:'Checklists'); ?>
+							<?= $LANG['H_INVENTORIES'] ?>
 						</a>
 					</li>
 					<li>
 						<a href="<?php echo $CLIENT_ROOT; ?>/imagelib/search.php">
-							<?php echo (isset($LANG['H_IMAGES'])?$LANG['H_IMAGES']:'Images'); ?>
+							<?= $LANG['H_IMAGES'] ?>
 						</a>
 					</li>
 					<li>
 						<a href="<?php echo $CLIENT_ROOT; ?>/includes/usagepolicy.php">
-							<?php echo (isset($LANG['H_DATA_USAGE'])?$LANG['H_DATA_USAGE']:'Data Use'); ?>
+							<?= $LANG['H_DATA_USAGE'] ?>
 						</a>
 					</li>
 					<li>
 						<a href="https://symbiota.org/docs" target="_blank" rel="noopener noreferrer">
-							<?php echo (isset($LANG['H_HELP'])?$LANG['H_HELP']:'Help'); ?>
+							<?= $LANG['H_HELP'] ?>
 						</a>
 					</li>
 					<li>
-						<a href='<?php echo $CLIENT_ROOT; ?>/sitemap.php'>
-							<?php echo (isset($LANG['H_SITEMAP'])?$LANG['H_SITEMAP']:'Sitemap'); ?>
+						<a href='<?= $CLIENT_ROOT; ?>/sitemap.php'>
+							<?= $LANG['H_SITEMAP'] ?>
 						</a>
 					</li>
 					<li>
