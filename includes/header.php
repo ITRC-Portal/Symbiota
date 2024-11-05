@@ -40,9 +40,7 @@ $collectionSearchPage = $SHOULD_USE_HARVESTPARAMS ? '/collections/index.php' : '
 				?>
 			</nav>
 			<div class="top-brand">
-				<a href="https://symbiota.org">
-					<img src="<?php echo $CLIENT_ROOT; ?>/images/layout/logo_symbiota.png" alt="Symbiota logo" width="100%">
-				</a>
+				<!-- Top brand logo removed - refer to template to re-add -->
 				<div class="brand-name">
 					<h1>International Taphonomy Reference Collection</h1>
 					<!-- <h2>Redesigned by the Symbiota Support Hub</h2> -->
