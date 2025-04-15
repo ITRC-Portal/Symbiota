@@ -1,14 +1,14 @@
 /* Variables
    ========================================================================== */
 :root {
-  --header-bg-image: url("../../images/layout/ITRCbackground.jpg");
-  --header-bg-color: #231e1950; /** Transparent color if adding header bg-image **/
+  --header-bg-image: url("../../images/layout/itrc-weathering-banner.jpg");
+  --header-bg-color: #231e1925; /** Transparent color if adding header bg-image **/
   --header-font-color: #ffffff;
   --brand-font-size: 1.5rem;
   --title-font-family: "PT Sans",sans-serif;
   --logo-width: 120px;
   --menu-top-bg-color: #231e1990;
-  --menu-font-size: 1rem;
+  --menu-font-size: 1.1rem;
   --body-bg-color: #fafafa;
   --body-text-color: #000000;
   --body-font-size: 1.1rem;
@@ -20,6 +20,6 @@
   --medium-color: #900C3F;
   --light-color: #fde397;
   --bright-color: #FFC30F;
-  --danger-color: #b31b1b;
+  --danger-color: #C70039;
   --max-innertext-width: 1024px;
 }

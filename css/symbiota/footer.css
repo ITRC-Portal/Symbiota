@@ -13,7 +13,7 @@ footer {
   /* column-gap: 3rem; */
   align-items: center;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 1rem 0;
   max-width: var(--max-innertext-width);
 }
 
@@ -29,8 +29,8 @@ footer {
 /* Medium screens and up */
 @media (min-width: 768px) {
   .logo-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    column-gap: 3rem;
+    grid-template-columns: repeat(6, minmax(200px, 1fr));
+    column-gap: .5rem;
     justify-content: center;
   }
 
