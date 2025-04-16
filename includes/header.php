@@ -40,7 +40,11 @@ $collectionSearchPage = $SHOULD_USE_HARVESTPARAMS ? '/collections/index.php' : '
 				?>
 			</nav>
 			<div class="top-brand">
-				<!-- Top brand logo removed - refer to template to re-add -->
+				<a href="<?= $CLIENT_ROOT ?>">
+					<div class="image-container">
+						<img src="<?= $CLIENT_ROOT ?>/images/layout/logo_symbiota.png" alt="Symbiota logo">
+					</div>
+				</a>
 				<div class="brand-name">
 					<h1>International Taphonomy Reference Collection</h1>
 					<!-- <h2>Redesigned by the Symbiota Support Hub</h2> -->
@@ -57,6 +61,11 @@ $collectionSearchPage = $SHOULD_USE_HARVESTPARAMS ? '/collections/index.php' : '
 					<li>
 						<a href="<?php echo $CLIENT_ROOT; ?>/index.php">
 							<?= $LANG['H_HOME'] ?>
+						</a>
+					</li>
+					<li>
+						<a href="<?php echo $CLIENT_ROOT; ?>/misc/aboutproject.php">
+							<?= $LANG['H_ABOUT_PROJECT'] ?>
 						</a>
 					</li>
 					<li>
@@ -89,13 +98,15 @@ $collectionSearchPage = $SHOULD_USE_HARVESTPARAMS ? '/collections/index.php' : '
 							<?= $LANG['H_SITEMAP'] ?>
 						</a>
 					</li>
+
+						<!-- Language toggle commented out
 					<li>
 						<select onchange="setLanguage(this)">
 							<option value="en">English</option>
 							<option value="es" <?php echo ($LANG_TAG=='es'?'SELECTED':''); ?>>Espa&ntilde;ol</option>
 							<option value="fr" <?php echo ($LANG_TAG=='fr'?'SELECTED':''); ?>>Français</option>
 						</select>
-					</li>
+					</li> -->
 				</ul>
 			</nav>
 		</div>

@@ -15,6 +15,12 @@ a {
       padding-top: 3rem;
       padding-bottom: 3rem;
   }
+
+    .logo-gallery {
+      grid-template-columns: repeat(6, minmax(150px, 1fr));
+      column-gap: .5rem;
+    }
+
 }
 
 /* Header */
@@ -40,4 +46,13 @@ div.brand-name h2{
 
 footer p {
   font-size: 0.9rem;
+}
+
+.logo-gallery img {
+  max-width: 100%;
+}
+
+/* Main Text */
+th, td {
+  text-align: center;
 }
