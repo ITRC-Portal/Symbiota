@@ -16,7 +16,7 @@
 			<img src="<?php echo $CLIENT_ROOT; ?>/images/layout/logo-Leakey-Foundation-transparent.png"/>
 		</a>
 		<a href="https://www.kws.go.ke/" target="_blank" title="Kenya Wildlife Service">
-			<img src="<?php echo $CLIENT_ROOT; ?>/images/layout/logo-KWS.png"/>
+			<img src="<?php echo $CLIENT_ROOT; ?>/images/layout/logo-KWS_transparent.png"/>
 		</a>
 	</div>
 	<p>This project made possible by a grant from The Leakey Foundation.</p>

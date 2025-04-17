@@ -40,8 +40,9 @@ header('Content-Type: text/html; charset=' . $CHARSET);
 			//Default Language
 			?>
 
+			<div><h1>Welcome</h1></div>
+			<div style=float:right><img style="width:400px" float:right; margin: 0 0 10px 10px; src="<?= $CLIENT_ROOT ?>/images/layout/itrc_home.gif"></div>
 			<div>
-				<h1>Welcome</h1>
 				<p>The International Taphonomy Reference Collection (ITRC) Portal provides specimen-based information on bone modifications that is designed to help paleobiologists, anthropologists, archaeologists, ecologists, and forensic scientists describe and interpret taphonomic evidence.</p>
 				<p>Systems for managing specimen data often lack the structure necessary for documenting taphonomic information, and vocabulary used to describe taphonomic features varies among reference textbooks and across research disciplines. The ITRC Portal offers a standardized system for documenting taphonomic traits along with taxonomic, locality, and other curatorial information.</p>
 				<p>The ITRC Portal is intended to serve as a venue for sharing taphonomic information across various scientific disciplines and to stimulate interest in visiting these collections at their host institutions.</p>
