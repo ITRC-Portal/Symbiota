@@ -9,8 +9,8 @@
 		<a href="https://museums.or.ke/" target="_blank" title="National Museums of Kenya">
 			<img src="<?php echo $CLIENT_ROOT; ?>/images/layout/logo-nmk.png" />
 		</a>
-		<a href="https://www.si.edu/" target="_blank" title="Smithsonian Institution">
-			<img src="<?php echo $CLIENT_ROOT; ?>/images/layout/logo-Smithsonian.gif" />
+		<a href="https://naturalhistory.si.edu/" target="_blank" title="Smithsonian Institution">
+			<img src="<?php echo $CLIENT_ROOT; ?>/images/layout/logo-SI-NMNH.png" />
 		</a>
 		<a href="https://leakeyfoundation.org/" target="_blank" title="The Leakey Foundation">
 			<img src="<?php echo $CLIENT_ROOT; ?>/images/layout/logo-Leakey-Foundation-transparent.png"/>
