@@ -67,7 +67,13 @@ $collectionSearchPage = $SHOULD_USE_HARVESTPARAMS ? '/collections/index.php' : '
 						<a href="<?php echo $CLIENT_ROOT; ?>/misc/aboutproject.php">
 							<?= $LANG['H_ABOUT_PROJECT'] ?>
 						</a>
-					</li>
+						<ul>
+							<li>
+								<a href="<?php echo $CLIENT_ROOT; ?>/misc/partners.php">
+									<?= $LANG['H_PARTNERS'] ?>
+								</a>
+							</li>
+						</ul>
 					<li>
 						<a href="<?php echo $CLIENT_ROOT . $collectionSearchPage ?>">
 							<?= $LANG['H_SEARCH'] ?>
