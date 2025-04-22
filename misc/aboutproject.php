@@ -96,60 +96,78 @@ include_once('content/lang/misc/aboutproject.'.$LANG_TAG.'.php');
 		<div>	
 		<h2 class="page-heading" style="font-size: 1.5rem;">Team Taphonomy</h2>
 			<img style="max-width:100%" src="<?= $CLIENT_ROOT ?>/images/layout/About_NMK_NMNHGroupphoto.jpg">
-				<table style="margin-left: auto; margin-right: auto; text-align: left;">
+				<table style="max-width:100%; margin-left: auto; margin-right: auto; text-align: left;">
   				<tr>
-				 	<th style="padding: 10px; border-bottom: 2px solid #000;">National Museums<br>of Kenya</th>
-					 <th style="padding: 10px; border-bottom: 2px solid #000;">National Museums<br>of Kenya<br>Paleontology</th>
-					 <th style="padding: 10px; border-bottom: 2px solid #000;">National Museums<br>of Kenya<br>Osteology</th>
-					<th style="padding: 10px; border-bottom: 2px solid #000;">Smithsonian<br>National Museum<br>of Natural History</th>
-					<th style="padding: 10px; border-bottom: 2px solid #000;">Advisors</th>
+				 	<th style="padding: 2px; border-bottom: 2px solid #000; vertical-align: center; text-align: center">National Museums<br>of Kenya</th>
+					 <th style="padding: 15px; border-bottom: 0px solid #000; vertical-align: center; text-align: center"></th>
+					 <th style="padding: 2px; border-bottom: 2px solid #000; vertical-align: top; text-align: center">National Museums<br>of Kenya<br><i>Paleontology</i></th>
+					 <th style="padding: 15px; border-bottom: 0px solid #000; vertical-align: center; text-align: center"></th>
+					 <th style="padding: 2px; border-bottom: 2px solid #000; vertical-align: top; text-align: center">National Museums<br>of Kenya<br><i>Osteology</i></th>
+					 <th style="padding: 15px; border-bottom: 0px solid #000; vertical-align: center; text-align: center"></th>
+					<th style="padding: 2px; border-bottom: 2px solid #000; vertical-align: top; text-align: center">Smithsonian<br>National Museum<br>of Natural History</th>
+					<th style="padding: 15px; border-bottom: 0px solid #000; vertical-align: center; text-align: center"></th>
+					<th style="padding: 2px; border-bottom: 2px solid #000; vertical-align: center; text-align: center">Advisors</th>
  				 </tr>
   				<tr>
 				  	<td style="padding: 3px;">Stephen Maikweki</td>
+					<td></td>
 					<td style="padding: 3px;">Samuel Ngui Muteti</td>
+					<td></td>
 					<td style="padding: 3px;">Ogeto Mwebi</td>
+					<td></td>
 					<td style="padding: 3px;">Kay Behrensmeyer</td>
+					<td></td>
 					<td style="padding: 3px;">Jean-Philip Brugal</td>
   				</tr>
   				<tr>
 				  	<td style="padding: 3px;"></td>
+					<td></td>
 				  	<td style="padding: 3px;">Rose Nyaboke</td>
+					<td></td>
 				  	<td style="padding: 3px;">Esther Nguta</td>
+					<td></td>
 					<td style="padding: 3px;">Jarod Hutson</td>
+					<td></td>
 					<td style="padding: 3px;">Gary Haynes</td>
   				</tr>
   				<tr>
 				  	<td style="padding: 3px;"></td>
+					<td></td>
 				  	<td style="padding: 3px;">Patrick Nyaga</td>
+					<td></td>
 				  	<td style="padding: 3px;">Ben Nyakundi</td>
+					<td></td>
 					<td style="padding: 3px;">Holly Little</td>
+					<td></td>
 					<td style="padding: 3px;">Diane Gifford-Gonzalez</td>
   				</tr>
   				<tr>
 				  <td style="padding: 3px;"></td>
-				  	<td style="padding: 3px;">Cecilia Kanyua</td>
+				  <td></td>
+				  <td style="padding: 3px;">Cecilia Kanyua</td>
+					<td></td>
 				  	<td style="padding: 3px;">Veronicah Onduso</td>
+					<td></td>
 					<td style="padding: 3px;">Briana Pobiner</td>
+					<td></td>
 					<td style="padding: 3px;">María A. Gutiérrez</td>
+					<td></td>
   				</tr>
   				<tr>
 				  	<td style="padding: 3px;"></td>
+					<td></td>
 				  	<td style="padding: 3px;">Beatrice Otebo</td>
+					<td></td>
 				  	<td style="padding: 3px;">Hezekiah Obwang'i</td>
 					<td style="padding: 3px;"></td>
 					<td style="padding: 3px;"></td>
   				</tr>
   				<tr>
 				    <td style="padding: 3px;"></td>
+					<td></td>
 				  	<td style="padding: 3px;">Justice Paul</td>
+					<td></td>
 				  	<td style="padding: 3px;">Joseph Rumoky</td>
-					<td style="padding: 3px;"></td>
-					<td style="padding: 3px;"></td>
-  				</tr>
-				  <tr>
-				    <td style="padding: 3px;"></td>
-				  	<td style="padding: 3px;"></td>
-				  	<td style="padding: 3px;"></td>
 					<td style="padding: 3px;"></td>
 					<td style="padding: 3px;"></td>
   				</tr>
