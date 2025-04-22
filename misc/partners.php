@@ -28,7 +28,7 @@ include_once('content/lang/misc/aboutproject.'.$LANG_TAG.'.php');
 		<div role="main" id="innertext" style="margin:10px 20px">
 			<h1 class="page-heading">Team Taphonomy</h1>
 		</div>	
-		
+		<div>
 			<img style="max-width:100%" src="<?= $CLIENT_ROOT ?>/images/layout/About_NMK_NMNHGroupphoto.jpg">
 				
 			<table style="max-width:100%; margin-left: auto; margin-right: auto; text-align: left;">
@@ -80,13 +80,12 @@ include_once('content/lang/misc/aboutproject.'.$LANG_TAG.'.php');
 				  <td style="padding: 3px;"></td>
 				  <td></td>
 				  <td style="padding: 3px;">Cecilia Kanyua</td>
-					<td></td>
-				  	<td style="padding: 3px;">Veronicah Onduso</td>
-					<td></td>
-					<td style="padding: 3px;">Briana Pobiner</td>
-					<td></td>
-					<td style="padding: 3px;">María A. Gutiérrez</td>
-					<td></td>
+				  <td></td>
+				  <td style="padding: 3px;">Veronicah Onduso</td>
+				  <td></td>
+				  <td style="padding: 3px;">Briana Pobiner</td>
+				  <td></td>
+				  <td style="padding: 3px;">María A. Gutiérrez</td>
   				</tr>
   				<tr>
 				  	<td style="padding: 3px;"></td>
@@ -94,8 +93,10 @@ include_once('content/lang/misc/aboutproject.'.$LANG_TAG.'.php');
 				  	<td style="padding: 3px;">Beatrice Otebo</td>
 					<td></td>
 				  	<td style="padding: 3px;">Hezekiah Obwang'i</td>
-					<td style="padding: 3px;"></td>
-					<td style="padding: 3px;"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
   				</tr>
   				<tr>
 				    <td style="padding: 3px;"></td>
@@ -103,11 +104,24 @@ include_once('content/lang/misc/aboutproject.'.$LANG_TAG.'.php');
 				  	<td style="padding: 3px;">Justice Paul</td>
 					<td></td>
 				  	<td style="padding: 3px;">Joseph Rumoky</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+  				</tr>
+				  <tr>
+				    <td style="padding: 3px;"></td>
+					<td style="padding: 3px;"></td>
+				  	<td style="padding: 3px;"></td>
+					<td style="padding: 3px;"></td>
+				  	<td style="padding: 3px;"></td>
+					<td style="padding: 3px;"></td>
+					<td style="padding: 3px;"></td>
 					<td style="padding: 3px;"></td>
 					<td style="padding: 3px;"></td>
   				</tr>
 			</table>
-		
+		</div>
 		</main>
 			<?php
 			include($SERVER_ROOT.'/includes/footer.php');

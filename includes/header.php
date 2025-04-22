@@ -69,11 +69,22 @@ $collectionSearchPage = $SHOULD_USE_HARVESTPARAMS ? '/collections/index.php' : '
 						</a>
 						<ul>
 							<li>
+								<a href="<?php echo $CLIENT_ROOT; ?>/misc/itrccomponents.php" target="Components" rel="noopener noreferrer">
+									<?= "Components" ?>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo $CLIENT_ROOT; ?>/misc/itrcstructure.php" target="Structure" rel="noopener noreferrer">
+									<?= "Structure" ?>
+								</a>
+							</li>
+							<li>
 								<a href="<?php echo $CLIENT_ROOT; ?>/misc/partners.php">
 									<?= $LANG['H_PARTNERS'] ?>
 								</a>
 							</li>
 						</ul>
+					</li>
 					<li>
 						<a href="<?php echo $CLIENT_ROOT . $collectionSearchPage ?>">
 							<?= $LANG['H_SEARCH'] ?>
