@@ -44,7 +44,7 @@ header('Content-Type: text/html; charset=' . $CHARSET);
 			<div style=float:right>
 				<img
 				style="width:500px" float:right; margin: 0 0 10px 10px;
-				src="<?= $CLIENT_ROOT ?>/images/layout/itrc_home_labels.gif"
+				src="<?= $CLIENT_ROOT ?>/images/layout/itrc_home_labels_7sec.gif"
 				alt="Slideshow illustrating examples of taphonomic marks on bones">
 			</div>
 				<p>The International Taphonomy Reference Collection (ITRC) Portal provides specimen-based information on bone modifications that is designed to help paleobiologists, anthropologists, archaeologists, ecologists, and forensic scientists describe and interpret taphonomic evidence.</p>

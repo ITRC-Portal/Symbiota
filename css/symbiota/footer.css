@@ -21,7 +21,7 @@ footer {
   max-width: 200px;
   height: auto;
   max-height: 80px;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 /* Media queries
