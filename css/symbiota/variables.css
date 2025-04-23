@@ -17,9 +17,9 @@
   --heading-font-family: "PT Sans", sans-serif;
   --link-color: #581845;
   --darkest-color: #231e19;
-  --medium-color: #900C3F;
-  --light-color: #fde397;
+  --medium-color: #581845;
+  --light-color: #deced7;
   --bright-color: #FFC30F;
-  --danger-color: #C70039;
+  --danger-color: crimson;
   --max-innertext-width: 1024px;
 }

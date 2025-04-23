@@ -27,11 +27,10 @@ include_once('content/lang/misc/aboutproject.'.$LANG_TAG.'.php');
 
 		<div role="main" id="innertext" style="margin:10px 20px">
 			<h1 class="page-heading">About the International Taphonomy Reference Collection (ITRC) Portal</h1>
-			<h2>Table of Contents</h5>
 		</div>
 		<div>
-			<table style="max-width:100%; margin-left: auto; margin-right: auto; text-align: left;">
-  				<tr>
+			<table style="max-width:100%; margin-left: auto; margin-right: auto;">
+				<tr>
 				 	<th style="padding: 15px; border-bottom: 0px solid #000; vertical-align: center; text-align: center; font-size: 1.25rem;"><a href="<?php echo $CLIENT_ROOT; ?>/misc/itrccomponents.php" target="Components">Components of the International Taphonomy Reference Collection (ITRC) Portal</a></th>
  				 </tr>
 				<tr>
@@ -41,7 +40,6 @@ include_once('content/lang/misc/aboutproject.'.$LANG_TAG.'.php');
 				 	<th style="padding: 15px; border-bottom: 0px solid #000; vertical-align: center; text-align: center; font-size: 1.25rem;"><a href="<?php echo $CLIENT_ROOT; ?>/misc/partners.php">Team Taphonomy</a></th>
 				</tr>
 			</table>
-
 		</div>
 	</main>
 		<?php

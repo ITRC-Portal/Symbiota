@@ -43,7 +43,7 @@ include_once('content/lang/misc/aboutproject.'.$LANG_TAG.'.php');
 			</p>
 		
 			<img style="max-width:100%; display:block; margin-left:auto; margin-right:auto;" src="<?= $CLIENT_ROOT ?>/images/layout/About_Ambo2010ZebraSkeleton.jpg">
-
+	</div>
 	</div>
 	</main>
 		<?php

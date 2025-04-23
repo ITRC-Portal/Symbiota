@@ -122,6 +122,7 @@ include_once('content/lang/misc/aboutproject.'.$LANG_TAG.'.php');
   				</tr>
 			</table>
 		</div>
+		</div>
 		</main>
 			<?php
 			include($SERVER_ROOT.'/includes/footer.php');

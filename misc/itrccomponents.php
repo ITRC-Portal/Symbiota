@@ -82,7 +82,8 @@ include_once('content/lang/misc/aboutproject.'.$LANG_TAG.'.php');
 					Taphonomically controlled fossil assemblages collected by Kay Behrensmeyer
 					</li>
 				</ul>
-	</div>
+		</div>
+		</div>
 	</main>
 		<?php
 		include($SERVER_ROOT.'/includes/footer.php');
