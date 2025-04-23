@@ -101,7 +101,7 @@ include_once('content/lang/misc/aboutproject.'.$LANG_TAG.'.php');
   				<tr>
 				    <td style="padding: 3px;"></td>
 					<td></td>
-				  	<td style="padding: 3px;">Justice Paul</td>
+				  	<td style="padding: 3px;">Justus Paul</td>
 					<td></td>
 				  	<td style="padding: 3px;">Joseph Rumoky</td>
 					<td></td>
