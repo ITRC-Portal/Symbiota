@@ -2,7 +2,60 @@
 Place your CSS customizations here.
 This stylesheet is defined last and will override all previously loaded sheets. You may reference variables defined in variables.css 
  */
- 
-.page-heading {
-  font-size: 2rem;
+
+ /* Global */
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .brand-name{
+      padding-left: 5rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+  }
+
+    .logo-gallery {
+      grid-template-columns: repeat(6, minmax(150px, 1fr));
+      column-gap: .5rem;
+    }
+
+}
+
+/* Header */
+
+.top-wrapper {
+  min-height: 175px;
+}
+
+div.brand-name h1{
+	font-family: "PT Sans", sans-serif;
+	font-weight: bold;
+  font-size: 1.8em;
+  text-shadow: 1px 1px 3px #231e19, -1px -1px 3px #231e19, 0 0 25px #231e19, 0 0 3px #231e19;
+}
+div.brand-name h2{
+	font-family: "PT Sans", sans-serif;
+	font-weight: normal;
+  text-shadow: 1px 1px 3px #231e19, -1px -1px 3px #231e19, 0 0 25px #231e19, 0 0 3px #231e19;
+  font-size: 1.2em
+}
+
+/* First level drop-down menu */
+nav.top-menu > ul > li > a:hover > ul,
+nav.top-menu > ul > li > a:focus > ul,
+nav.top-menu > ul > li:hover > ul,
+nav.top-menu > ul > li:focus-within > ul {
+  background-color: #807e7b;
+}
+
+/* Footer */
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.logo-gallery img {
+  max-width: 100%;
 }

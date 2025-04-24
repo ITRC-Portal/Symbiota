@@ -8,35 +8,40 @@ include_once('content/lang/misc/aboutproject.'.$LANG_TAG.'.php');
 	<head>
 		<title>About Project</title>
 		<?php
-
+		include_once($SERVER_ROOT . '/includes/googleanalytics.php');
 		include_once($SERVER_ROOT.'/includes/head.php');
 		?>
-	</head>
-	<body>
-		<?php
-		$displayLeftMenu = false;
-		include($SERVER_ROOT.'/includes/header.php');
-		?>
-		<div class="navpath">
+</head>
+<body>
+	<?php
+	include($SERVER_ROOT . '/includes/header.php');
+	?>
+	<div class="navpath"></div>
+	<main id="innertext">
+		<div>
 			<a href="../index.php"><?php echo htmlspecialchars((isset($LANG['HOME'])?$LANG['HOME']:'Home'), ENT_COMPAT | ENT_HTML401 | ENT_SUBSTITUTE); ?></a> &gt;&gt;
 			<b><?php echo (isset($LANG['ABOUT_PROJECT'])?$LANG['ABOUT_PROJECT']:'About the Project'); ?></b>
 		</div>
+
 		<!-- This is inner text! -->
+
 		<div role="main" id="innertext" style="margin:10px 20px">
-			<h1 class="page-heading"><?php echo $LANG['ABOUT_PROJECT']; ?>:</h1>
-
-			<p></p>
-
-			<h1><?php echo (isset($LANG['FUNDING'])?$LANG['FUNDING']:'Funding'); ?>:</h1>
-
-			<p>This portal has been supported by the following NSF Awards:</p>
-
-			<p>
-				Thematic Collections Network Award:
-				<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=------" target="_blank">-----</a>
-			</p>
-
+			<h1 class="page-heading">About the International Taphonomy Reference Collection (ITRC) Portal</h1>
 		</div>
+		<div>
+			<table style="max-width:100%; margin-left: auto; margin-right: auto;">
+				<tr>
+				 	<th style="padding: 15px; border-bottom: 0px solid #000; vertical-align: center; text-align: center; font-size: 1.25rem;"><a href="<?php echo $CLIENT_ROOT; ?>/misc/itrccomponents.php" target="Components">Components of the International Taphonomy Reference Collection (ITRC) Portal</a></th>
+ 				 </tr>
+				<tr>
+				 	<th style="padding: 15px; border-bottom: 0px solid #000; vertical-align: center; text-align: center; font-size: 1.25rem;"><a href="<?php echo $CLIENT_ROOT; ?>/misc/itrcstructure.php" target="Structure">Structure of the International Taphonomy Reference Collection (ITRC) Portal</th>
+ 				 </tr>
+				  <tr>
+				 	<th style="padding: 15px; border-bottom: 0px solid #000; vertical-align: center; text-align: center; font-size: 1.25rem;"><a href="<?php echo $CLIENT_ROOT; ?>/misc/partners.php">Team Taphonomy</a></th>
+				</tr>
+			</table>
+		</div>
+	</main>
 		<?php
 		include($SERVER_ROOT.'/includes/footer.php');
 		?>

@@ -40,8 +40,10 @@ $collectionSearchPage = $SHOULD_USE_HARVESTPARAMS ? '/collections/index.php' : '
 				?>
 			</nav>
 			<div class="top-brand">
-				<a href="https://symbiota.org">
-					<img src="<?php echo $CLIENT_ROOT; ?>/images/layout/logo_symbiota.png" alt="Symbiota logo" width="100%">
+				<a href="<?= $CLIENT_ROOT ?>">
+					<div class="image-container">
+						<img src="<?= $CLIENT_ROOT ?>/images/layout/left_logo.png" alt="Symbiota logo">
+					</div>
 				</a>
 				<div class="brand-name">
 					<h1>International Taphonomy Reference Collection</h1>
@@ -62,6 +64,28 @@ $collectionSearchPage = $SHOULD_USE_HARVESTPARAMS ? '/collections/index.php' : '
 						</a>
 					</li>
 					<li>
+						<a href="<?php echo $CLIENT_ROOT; ?>/misc/aboutproject.php">
+							<?= $LANG['H_ABOUT_PROJECT'] ?>
+						</a>
+						<ul>
+							<li>
+								<a href="<?php echo $CLIENT_ROOT; ?>/misc/itrccomponents.php" target="Components">
+									<?= "Components" ?>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo $CLIENT_ROOT; ?>/misc/itrcstructure.php" target="Structure">
+									<?= "Structure" ?>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo $CLIENT_ROOT; ?>/misc/partners.php">
+									<?= $LANG['H_PARTNERS'] ?>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
 						<a href="<?php echo $CLIENT_ROOT . $collectionSearchPage ?>">
 							<?= $LANG['H_SEARCH'] ?>
 						</a>
@@ -69,11 +93,6 @@ $collectionSearchPage = $SHOULD_USE_HARVESTPARAMS ? '/collections/index.php' : '
 					<li>
 						<a href="<?php echo $CLIENT_ROOT; ?>/collections/map/index.php" target="_blank" rel="noopener noreferrer">
 							<?= $LANG['H_MAP_SEARCH'] ?>
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo $CLIENT_ROOT; ?>/checklists/index.php">
-							<?= $LANG['H_INVENTORIES'] ?>
 						</a>
 					</li>
 					<li>
@@ -96,13 +115,15 @@ $collectionSearchPage = $SHOULD_USE_HARVESTPARAMS ? '/collections/index.php' : '
 							<?= $LANG['H_SITEMAP'] ?>
 						</a>
 					</li>
+
+						<!-- Language toggle commented out
 					<li>
 						<select onchange="setLanguage(this)">
 							<option value="en">English</option>
 							<option value="es" <?php echo ($LANG_TAG=='es'?'SELECTED':''); ?>>Espa&ntilde;ol</option>
 							<option value="fr" <?php echo ($LANG_TAG=='fr'?'SELECTED':''); ?>>Français</option>
 						</select>
-					</li>
+					</li> -->
 				</ul>
 			</nav>
 		</div>
